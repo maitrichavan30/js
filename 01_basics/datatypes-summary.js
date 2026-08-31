@@ -47,3 +47,28 @@ const myFunction = function() {
 console.log(typeof myFunction);
 console.log(typeof heros);
 console.log(typeof myObj);
+
+// Stack (Primitives) , Heap (Non-Primitives)
+
+//stack - gives copy
+let myYoutubename = "maitrichavandotcom"
+
+let anotherName = myYoutubename
+anotherName = "maitriandcode"
+
+console.log(myYoutubename);
+console.log(anotherName);
+
+//heap - gives reference means give orignal 
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+userTwo.email = "maitri@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+
