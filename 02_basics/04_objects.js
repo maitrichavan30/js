@@ -5,7 +5,7 @@ tinderUser.id = "123abc";
 tinderUser.name = "maitri";
 tinderUser.isLoggedIn = false;
 
-console.log(tinderUser);
+//console.log(tinderUser);
 
 const regularUser = {
     email: "maitri@gmail.com",
@@ -17,7 +17,7 @@ const regularUser = {
     }
 }
 
-console.log(regularUser.fullName.userfullName.firstname);
+//console.log(regularUser.fullName.userfullName.firstname);
 
 const obj1 = {1: "a", 2: "b"}
 const obj2 = {3: "a", 4: "b"}
@@ -50,3 +50,33 @@ console.log(Object.values(tinderUser));
 console.log(Object.entries(tinderUser));
 
 console.log(tinderUser.hasOwnProperty('isLoggedIn')); // this will check if the property is present in the object or not
+
+
+// how we destructure object 
+const course = {
+    coursename: "js in hindi",
+    price:"999",
+    courseInstructor: "maitri"
+}
+
+course.courseInstructor // this is make code too dirty so we use another accssing methods
+
+const {courseInstructor : instructor} = course
+console.log(courseInstructor);
+console.log(instructor);
+
+//JSON
+// KEYs and VALUES are is string in JSON
+// get APIS thorugh object 
+//{
+//    "name" : "maitri", // key is also => string value is also =>string in JSON
+//    "coursename": "js in hindi",
+//    "price" : "free"
+//}
+
+//get APIS through ARRAYS
+[
+    {},//object
+    {},//object 
+    {}//object
+]
